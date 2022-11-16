@@ -1,8 +1,8 @@
 tasks:
   metarobot:
-    shell: python -m robot --report NONE --outputdir output/meta --logtitle "Task log" meta/tasks.robot
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" meta/tasks.robot
   tester:
-    shell: python -m robot --outputdir output --logtitle "Testsuite log" testsuite/
+    shell: python -m robot --outputdir secret --logtitle "Testsuite log" testsuite/
 
 condaConfigFile: conda.yaml
 artifactsDir: output

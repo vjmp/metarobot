@@ -10,6 +10,13 @@ To run this meta robot, you need:
 rcc run --space metarobot --task metarobot
 ```
 
+## Notes
+
+- metarobot uses `%{RCC_EXE}` environment variable to run inner "tester" robot
+- "tester" robot output is directed to private "secret" folder, so it wont be uploaded to Control Room (when run as Control Room robot or assistant)
+- metarobot could then control what actually happens to "tester" robot output (but this example does not have anything implemented)
+- but metarobot is structured so, that you can extend that functionality there
+
 ## Template: Standard Robot Framework
 
 Want to get started using [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) this is the simplest template to start from.
